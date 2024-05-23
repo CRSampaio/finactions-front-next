@@ -1,0 +1,26 @@
+-- Aprendendo React
+O que é?
+R: Framework Open-Source JavaScript para construir páginas web feito em cima do runtime NodeJS, foi criado pelo Facebook/Meta e é mantido pelo mesmo e pela comunidade
+
+Como funciona?
+R: O React é um framework orientado a componentes.
+-- Componentes
+R: Componentes são um tipo dentro do framework. A grosso modo, são basicamente arquivos do tipo JSX/TSX com uma função default que sempre irá começar com a letra maiúscula. Dentro dessa função vamos ter o HTML que o componente irá retornar, esse HTML pode ser combinado com dados vindos de chamadas de API e outros componentes.
+Da mesma forma que você retorna componentes em funções, você pode armazena-las me váriaveis JavaScript.
+Você também pode transform um objeto de tipo X para um component utilizando a função map(), por exemplo transforma um lista de produto em um lista de <li> com os dados dos produtos.
+Cada componente tem seu estado próprio, assim como cada struct tem seu ponteiro na memória.
+
+-- Interpolação de HTML e JSX
+R: Para utilizar dados vindo de alguma váriavel ou funcão JavaScript, utilize {}. Se for necessário passar dados de um váriavel JavaScript ou fazer alguma lógica, para renderizar um atributo atributo HTML, utilize {{}}.
+
+-- Eventos
+R: Diferente do Angular aonde tinhamos uma sintaxe diferente do HTML, aqui vamos passar apenas os nomes das funções para um evento, sem invocá-la.
+Assim como no Angular, é possível passar event handlers definidos em um componente pai para os componentes filhos
+
+-- props
+São definidos no parâmetro da função default de um componente utilizando {} e dentro dela passand os nomes dos parâmetros esperados, isso é um técnica chamada "lifting state up", que é utilizada quando queremos compartilhar o estado dos componente(pai para filhos)
+
+-- Ciclos de vida
+---- useState()
+Função nativa do React que irá retorna o estado de um componente e uma função para atualizar o estado do mesmo
+
